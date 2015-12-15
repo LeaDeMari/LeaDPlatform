@@ -17,7 +17,7 @@ var actorChars = {
   function makeParticles() {
     //create an array of particles for our opening animation
     particles = [];
-    for(var i = 0; i < 50; i++)
+    for(var i = 0; i < 100; i++)
     {
       particles.push(new createParticle());
     }
@@ -30,9 +30,9 @@ var actorChars = {
     this.y = Math.random()*canvas.height;
     this.vx = Math.random()*5-1;
     this.vy = Math.random()*5-1;
-    var colors = ["magenta", "teal", "turqiouse", "plum"];
+    var colors = ["midnightblue"];
     this.color = colors[Math.floor(Math.random()*colors.length)];
-    this.radius = 7;
+    this.radius = 5;
   }
 
   function moveParticles() {
